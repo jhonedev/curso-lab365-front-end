@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let convidados = []
+
+        //Adicionar convidados se hardcode, o proprio usuário passa seu nome
+        function listaConvidados() {
+            let nomeConvidado = prompt("Digite seu nome: ")
+
+            convidados.push(nomeConvidado)
+        }
+
+        function mostrarConvidados(){
+            console.log(convidados)
+        }
+
+        listaConvidados()
+        mostrarConvidados()
+    </script>
+</body>
+
+</html>

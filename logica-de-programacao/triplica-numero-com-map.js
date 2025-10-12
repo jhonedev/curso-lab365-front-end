@@ -19,6 +19,48 @@ function aumentarTemperaturasEm5(temperaturas) {
   return temperaturaAumentada
 }
 
+function nomesEmMinusculas(nomes) {
+  let nomesMinusculos = nomes.map(function(nome){
+    return nome.toLowerCase()
+  })
+  return nomesMinusculos
+}
+
+function nomesEmMaiusculas(nomes) {
+  let maiusculas = nomes.map(function(nome){
+    return nome.toUpperCase()
+  })
+  return maiusculas
+}
+
+function obterIniciais(nomes) {
+  let novaMatriz = nomes.map(function(nome){
+    return nome[0]
+  })
+  return novaMatriz
+}
+
+function obterUltimoCaractere(nomes) {
+  let novaMatriz = nomes.map(function(nome){
+    return nome[nome.length -1]
+  })
+  return novaMatriz
+}
+
+// Não modifique as linhas abaixo
+console.log(obterUltimoCaractere(["Alice", "Bruno", "Samuel", "Augusto"])) // ["e", "o", "l", "o"]
+console.log(obterUltimoCaractere(["samara", "alexandre", "carla"])) // ["a", "e", "a"]
+// Não modifique as linhas abaixo
+console.log(obterIniciais(["Alice", "Bruno", "Samuel", "Augusto"])) // ["A", "B", "S", "A"]
+console.log(obterIniciais(["samara", "alexandre", "carla"])) // ["s", "a", "c"]
+
+// Não modifique as linhas abaixo
+console.log(nomesEmMaiusculas(["Alice", "Bruno", "Samuel", "Augusto"])) // ["ALICE", "BRUNO", "SAMUEL", "AUGUSTO"]
+console.log(nomesEmMaiusculas(["samuel", "alice", "cARLa"])) // ["SAMUEL", "ALICE", "CARLA"]
+
+// Não modifique as linhas abaixo
+console.log(nomesEmMinusculas(["Alice", "Bruno", "Samuel", "Augusto"])) // ["alice", "bruno", "samuel", "augusto"]
+console.log(nomesEmMinusculas(["SAMARA", "ALEXANDRE", "CARLA"])) // ["samara", "alexandre", "carla"]
 
 // Não modifique as linhas abaixo
 console.log(notasTriplicadas([10, 20])) // [30, 60]

@@ -2,7 +2,7 @@ let carro = {
     marca: "fiat",
     modelo: "uno",
     ano: 2017,
-    cor: preto
+    cor: "preto"
 }
 
 console.log(carro.cor)

@@ -4,8 +4,13 @@
 //liga
 //import, export...
 
-import { Personagem } from "./Personagem.js";
+//import { Personagem } from "./Personagem.js";
+import { Heroi } from "./Heroi.js";
 
-let batman = new Personagem("Batman", "Filantropia noturna e planejamento exagerado."); // classe (model) => objeto
+let batman = new Heroi("Batman",
+    "Filantropia noturna e planejamento exagerado.",
+    [8, 10, 9, 7, 10]
+); // classe (model) => objeto
 
+console.log(batman)
 console.log(batman.getInfo())
